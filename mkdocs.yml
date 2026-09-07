@@ -1,0 +1,56 @@
+site_name: Dani Dueñas | Cloud & Technical Support Portfolio
+site_url: https://docs.danielbolanos.com/  
+
+theme:
+  name: material
+  plugins:
+  - i18n:
+      default_language: en  # <--- Tu página principal y contenido nuevo estará aquí
+      fallback: true        # <--- Crucial: si no hay traducción, muestra el archivo base
+      languages:
+        en: English
+        es: Español
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+  palette:
+    # Tema claro / oscuro con conmutador automático
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+      extra:
+      social:
+    - icon: fontawesome/solid/briefcase
+      link: https://tu-portafolio.com  # Enlace a tu portafolio web principal
+      name: Main Portfolio
+    - icon: fontawesome/brands/github
+      link: https://github.com/tu-usuario
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/tu-usuario
+      name: LinkedIn
+
+nav:
+  - Home: index.md
+  - About Me: about-me.md
+  - Projects:
+      - Overview: projects.md
+      - Portfolio Website - Oracle OCI: ORACLE-website.md
+      - Barberia Alura - GCP: Proyect-GCP.md
+  - Contact: contact.md
+   
